@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+
 import "./globals.css";
 
 const geistSans = localFont({
@@ -19,10 +20,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
+      {/* <head>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  </head> */}
+
       <body
       // ${geistSans.variable} ${geistMono.variable}
-        className={` antialiased`}
+        className={` antialiased bg-[#E5E5E5]`}
       >
         {children}
       </body>
