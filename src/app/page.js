@@ -1,5 +1,6 @@
 import Booking from "./Booking"
 import Footer from "./Footer"
+import BookingForm from "./Form"
 import Header from "./Header"
 import Intro from "./Intro"
 

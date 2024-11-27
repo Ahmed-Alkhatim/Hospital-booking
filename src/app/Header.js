@@ -1,12 +1,14 @@
+import Link from "next/link"
+
 export default () => {
     return (
         <div className="flex justify-between items-center  py-10">
                <div> 
                   <h1 className="text-secondary text-[18px] md:text-[24px] font-bold">نظام الحجز الإلكتروني</h1>
                </div>
-          <div className="bg-primary text-white rounded-[8px] py-2 px-3">
-            <svg className=" ml-2 inline-block" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_2_1808)">
+          <Link href = "/booking" ><div className="bg-primary text-white rounded-[8px] py-2 px-3">
+            <svg className=" cursor-pointer ml-2 inline-block" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clipPath="url(#clip0_2_1808)">
                 <path d="M17.5017 1.14282H14.9236V2.73751H16.7043V6.29898C16.7043 8.98098 14.5222 11.1628 11.8405 11.1628H11.4684C8.78643 11.1628 6.60464 8.9807 6.60464 6.29898V2.73751H8.38537V1.14282H5.80729C5.3669 1.14282 5.00995 1.49978 5.00995 1.94017V6.29898C5.00995 9.86017 7.90725 12.7575 11.4684 12.7575H11.8405C15.4017 12.7575 18.299 9.86017 18.299 6.29898V1.94017C18.299 1.49978 17.9421 1.14282 17.5017 1.14282Z" fill="white"/>
                 <path d="M14.8439 0C14.4035 0 14.0465 0.356953 14.0465 0.797344V3.02991C14.0465 3.4703 14.4035 3.82725 14.8439 3.82725C15.2842 3.82725 15.6412 3.4703 15.6412 3.02991V0.797344C15.6412 0.356953 15.2842 0 14.8439 0Z" fill="white"/>
                 <path d="M8.54484 0C8.10445 0 7.7475 0.356953 7.7475 0.797344V3.02991C7.7475 3.4703 8.10445 3.82725 8.54484 3.82725C8.98523 3.82725 9.34218 3.4703 9.34218 3.02991V0.797344C9.34218 0.356953 8.98523 0 8.54484 0Z" fill="white"/>
@@ -21,6 +23,7 @@ export default () => {
             </svg>
             <span>حجز موعد</span>
             </div>
+            </Link>
         </div>
     )
 }
