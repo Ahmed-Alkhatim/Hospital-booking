@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Doctor Application",
-  description: "for online booking",
+  title: "مستشفى أطباء بورتسودان",
+  description: "نظام الحجز الإلكتروني",
 };
 
 export default function RootLayout({ children }) {
