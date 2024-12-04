@@ -1,3 +1,4 @@
+import Link from "next/link"
 export default () => {
     return(
         <div className="flex flex-wrap  justify-center md:justify-between items-center mt-20">
