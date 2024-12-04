@@ -9,7 +9,7 @@ export default () => {
             <Header />
             <BookingForm />
         </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

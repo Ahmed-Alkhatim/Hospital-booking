@@ -4,7 +4,7 @@ export default () => {
     return (
         <div className="flex justify-between items-center  py-10">
                <div> 
-                  <h1 className="text-secondary text-[18px] md:text-[24px] font-bold">نظام الحجز الإلكتروني</h1>
+                  <h1 className="text-secondary text-[18px] md:text-[24px] font-bold"> مستشفى أطباء بورتسودان </h1>
                </div>
           <Link href = "/booking" ><div className="bg-primary text-white rounded-[8px] py-2 px-3">
             <svg className=" cursor-pointer ml-2 inline-block" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

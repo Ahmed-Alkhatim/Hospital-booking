@@ -96,7 +96,7 @@ export default function BookingForm() {
 
     // // Only render the form if we're on the client
     if (loading) {
-        return null;
+        return <div>جاري التحميل ...</div>;
     }
 
     return (
