@@ -1,15 +1,19 @@
 import Link from "next/link"
+import { useLanguage } from "./page"
+
 export default () => {
+    const { language } = useLanguage()
     return(
         <div className="flex flex-wrap  justify-center md:justify-between items-center mt-20">
 
             <div className="w-[415px] mb-10">
                 <img src="/home.png"/>
             </div>
-            <div className="md:w-1/2  text-center md:text-right font-bold space-y-5">
-                <h1 className="text-secondary text-[24px]">راحة وسهولة مع الحجز الإلكتروني </h1>
+            <div className={"md:w-1/2  text-center  font-bold space-y-5 " + (language == "ar" ? "md:text-right" : "md:text-left")}>
+
+                <h1 className="text-secondary text-[24px]">{language == "ar" ? "راحة وسهولة مع الحجز الإلكتروني " : "Comfort and ease with online booking"}</h1>
                 <p className="text-gray text-[16px]">
-                استمتع براحة الحجز من منزلك دون الحاجة للانتظار الطويل أو التنقل. يوفر الحجز الإلكتروني وقتك وجهدك، حيث يمكنك اختيار الموعد والطبيب المناسبين لك بكل سهولة. 
+               { language == "ar" ? " استمتع براحة الحجز من منزلك دون الحاجة للانتظار الطويل أو التنقل. يوفر الحجز الإلكتروني وقتك وجهدك، حيث يمكنك اختيار الموعد والطبيب المناسبين لك بكل سهولة." : "Enjoy the convenience of booking from home without the need for long waits or travel. Online booking saves you time and effort, allowing you to easily choose the right appointment and doctor for you."} 
                 </p>
                 <div className="bg-primary text-white rounded-[8px] py-2 px-3 inline-block">
                 <Link href = "/booking" >
@@ -27,7 +31,7 @@ export default () => {
                         </clipPath>
                         </defs>
                     </svg>
-                <span>حجز موعد</span>
+                <span>{ language == "ar" ? "حجز موعد" : "Appointment"}</span>
                 </Link>
             </div>
 

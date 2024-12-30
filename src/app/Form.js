@@ -16,6 +16,7 @@ export default function BookingForm() {
         patientName: '',
         address: '',
     });
+    
     // const [isClient, setIsClient] = useState(false);  // State to handle client-side rendering
     const[doctors, setDoctors] = useState([])
     const[specials, setSpecials] = useState([])
