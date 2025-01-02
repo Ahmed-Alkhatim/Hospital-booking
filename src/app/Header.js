@@ -1,10 +1,11 @@
 'use client'
 import Link from "next/link"
-import { useLanguage } from "./page"
+import { useLanguage } from "./LangContext"
 
 export default () => {
 
     const { language, toggleLanguage } = useLanguage()
+    
     return (
         <div className="flex justify-between items-center  py-10">
             <div>

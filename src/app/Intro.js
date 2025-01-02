@@ -1,5 +1,7 @@
 "use client"
-import { useLanguage } from "./page"
+
+import { useLanguage } from "./LangContext"
+
 
 export default () => {
     const { language } = useLanguage()
